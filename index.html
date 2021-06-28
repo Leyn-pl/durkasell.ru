@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Durkasell.ru</title>
+        <script src="script1.js"></script>
+        <style>
+            p.title {
+                text-align: center;
+            }
+            #end {
+                display: none;
+            }
+            #tmb {
+                display: none;
+            }
+            div.border {
+                border: 1px solid gray;
+                padding: 20px;
+                margin: 10px;
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mining" class="border">
+            <p class="title">Майнинг</p>
+            <hr width="90px">
+            <input type="button" onclick="mine()" value="Майнить шизиум">
+            <progress id="bar" value="0" max="100"></progress>
+            <a id="mp">0/100</a>
+            <br>
+        </div>
+        <div id="vars" class="border">
+            <p class="title">Шиза</p>
+            <hr width="90px">
+            <p id="s">Шизиум A: 0, Шизиум B: 0, Шизиум C: 0</p>
+            <p id="sc">Шизокойы: 100</p>
+        </div>
+        <div id="shop" class="border">
+            <p class="title">Магазин</p>
+            <hr width="90px">
+            <input type="button" onclick="sellA(shiziumA)" value="Продать шизиум A">
+            <input type="button" onclick="sellB(shiziumB)" value="Продать шизиум B">
+            <input type="button" onclick="sellC(shiziumC)" value="Продать шизиум C">
+            <p></p>
+            <input type="button" onclick="up()" id="wifi" value="Улучшить инет (100) lvl 1/10">
+            <p></p>
+            <input type="button" onclick="buy()" id="miner" value="Купить майнера (500) lvl 0/∞">
+            <p></p>
+            <input type="button" onclick="pc()" id="pc" value="Улучшить комп (1000) lvl 1/10">
+            <p></p>
+            <input type="button" onclick="end()" id="end" value="Закончить игру (1000000)">
+        </div>
+        <div id="secrets">
+            <p id="mm"></p>
+            <p id="mmm"></p>
+            <p id="mmmm"></p>
+            <a id="tm"></a><input type="button" onclick="endend()" id="tmb" value="Забрать">
+        </div>
+    </body>
+</html>
