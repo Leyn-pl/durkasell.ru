@@ -22,7 +22,11 @@ function mine(){
     if(minebar >= barmax){
         get();
         document.getElementById("s").innerHTML = "Шизиум A: " + shiziumA + ", Шизиум B: " + shiziumB + ", Шизиум C: " + shiziumC;
-        minebar = 0;
+        if(minebar>barmax){
+            minebar=minebar-barmax;
+        }else{
+            minebar = 0;
+        }
         document.getElementById("bar").value = minebar;
         document.getElementById("mp").innerHTML = minebar + "/" + barmax;
     }
