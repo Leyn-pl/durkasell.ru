@@ -1,0 +1,26 @@
+name: Идея
+description: У вас есть идеи как улучшить игру? Вы можете написать их здесь.
+title: "Title"
+labels: [Идея]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Опишите что бы вы хотели видеть в игре."
+    validations:
+      required: true
+  - type: textarea
+    id: description2
+    attributes:
+      label: "Напишите причину, по которой вы хотите это добавить."
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Перед тем как отправлять, вы должны подтвердить:
+      options:
+        - label: Я просмотрел список предложений
+          required: true
+        - label: Я уже знаю всё что есть в игре
+          required: true
